@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Admin Console — PrepPilot AI</title>
+    <link rel="icon" href="logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+        <aside class="sidebar"></aside>
+        <main class="main">
+            <header class="main-head">
+                <div><a href="dashboard.html" class="back">← Dashboard</a>
+                    <h1>Admin Console</h1>
+                    <p class="muted">Manage users, resources and platform activity.</p>
+                </div><span class="status success">Admin access</span>
+            </header>
+            <section class="stats">
+                <div class="stat"><span>TOTAL USERS</span><strong>1,248</strong><small>+12% this month</small></div>
+                <div class="stat"><span>SESSIONS</span><strong>8,421</strong><small>Today: 183</small></div>
+                <div class="stat"><span>REPORTS</span><strong>6,902</strong><small>98% generated</small></div>
+                <div class="stat"><span>RESOURCES</span><strong>142</strong><small>12 pending review</small></div>
+            </section>
+            <section class="panel">
+                <div class="panel-head">
+                    <div>
+                        <h2>Recent users</h2>
+                        <p>User accounts and preparation activity.</p>
+                    </div><button class="btn btn-primary" data-toast="Add user form opened">+ Add User</button>
+                </div>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>User</th>
+                                <th>Role</th>
+                                <th>Interviews</th>
+                                <th>Score</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><b>Alex Johnson</b><small>alex@example.com</small></td>
+                                <td>Frontend Developer</td>
+                                <td>12</td>
+                                <td>91%</td>
+                                <td><span class="status success">Active</span></td>
+                            </tr>
+                            <tr>
+                                <td><b>Priya Shah</b><small>priya@example.com</small></td>
+                                <td>Data Analyst</td>
+                                <td>8</td>
+                                <td>84%</td>
+                                <td><span class="status success">Active</span></td>
+                            </tr>
+                            <tr>
+                                <td><b>Rahul Mehta</b><small>rahul@example.com</small></td>
+                                <td>Software Engineer</td>
+                                <td>5</td>
+                                <td>79%</td>
+                                <td><span class="status warning">Review</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <section class="panel">
+                <h2>Learning resource management</h2>
+                <div class="resource-admin">
+                    <div><b>JavaScript Fundamentals</b><small>Engineering · 24 views today</small></div><span
+                        class="status success">Published</span><button class="btn btn-light"
+                        data-toast="Resource edit mode">Edit</button>
+                </div>
+                <div class="resource-admin">
+                    <div><b>Interview Communication</b><small>Career · 17 views today</small></div><span
+                        class="status success">Published</span><button class="btn btn-light"
+                        data-toast="Resource edit mode">Edit</button>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

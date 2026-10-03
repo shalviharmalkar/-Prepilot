@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Interview Center — PrepPilot AI</title>
+    <link rel="icon" href="logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+        <aside class="sidebar"></aside>
+        <main class="main">
+            <header class="main-head">
+                <div><a href="dashboard.html" class="back">← Dashboard</a>
+                    <h1>Interview Center</h1>
+                    <p class="muted">Create a session, select a role and start practicing.</p>
+                </div>
+            </header>
+            <section class="setup-card panel">
+                <div class="setup-step"><span>01</span>
+                    <div><b>Select job role</b><select id="roleSelect">
+                            <option>Frontend Developer</option>
+                            <option>Software Engineer</option>
+                            <option>UI/UX Developer</option>
+                            <option>Data Analyst</option>
+                        </select></div>
+                </div>
+                <div class="setup-step"><span>02</span>
+                    <div><b>Choose interview type</b>
+                        <div class="mode-options"><button class="mode selected"
+                                data-mode="voice"><strong>🎙️</strong><b>Voice Interview</b><small>Answer using your
+                                    microphone</small></button><button class="mode"
+                                data-mode="video"><strong>🎥</strong><b>Video Interview</b><small>Camera + behavioral
+                                    analysis</small></button></div>
+                    </div>
+                </div>
+                <div class="setup-step"><span>03</span>
+                    <div><b>Difficulty</b>
+                        <div class="segmented"><button
+                                class="selected">Beginner</button><button>Intermediate</button><button>Advanced</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="setup-footer"><span>10 questions · ~20 minutes · AI evaluation</span><a id="startInterview"
+                        href="interview-room.html" class="btn btn-primary btn-lg">Start Interview →</a></div>
+            </section>
+            <div class="panel">
+                <div class="panel-head">
+                    <div>
+                        <h2>Past sessions</h2>
+                        <p>Continue improving from your previous attempts.</p>
+                    </div>
+                </div>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Role</th>
+                                <th>Mode</th>
+                                <th>Difficulty</th>
+                                <th>Score</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Frontend Developer</td>
+                                <td>🎥 Video</td>
+                                <td>Intermediate</td>
+                                <td>91%</td>
+                                <td><span class="status success">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>Software Engineer</td>
+                                <td>🎙️ Voice</td>
+                                <td>Beginner</td>
+                                <td>86%</td>
+                                <td><span class="status success">Completed</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

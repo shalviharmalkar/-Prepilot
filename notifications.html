@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Notifications — PrepPilot AI</title>
+    <link rel="icon" href="logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+        <aside class="sidebar"></aside>
+        <main class="main">
+            <header class="main-head">
+                <div><a href="dashboard.html" class="back">← Dashboard</a>
+                    <h1>Notifications</h1>
+                    <p class="muted">Updates, reminders and recommendations.</p>
+                </div><button class="btn btn-light" id="markRead">Mark all read</button>
+            </header>
+            <div class="panel notification-list">
+                <div class="notification unread"><span class="notif-icon">🎯</span>
+                    <div><b>Your interview score improved</b>
+                        <p>Your latest session reached 91%, up from 86%.</p><small>2 hours ago</small>
+                    </div>
+                </div>
+                <div class="notification unread"><span class="notif-icon">📄</span>
+                    <div><b>Resume match updated</b>
+                        <p>Your Frontend Developer match is now 91%.</p><small>Yesterday</small>
+                    </div>
+                </div>
+                <div class="notification unread"><span class="notif-icon">💡</span>
+                    <div><b>New learning recommendation</b>
+                        <p>Practice TypeScript to strengthen your profile.</p><small>2 days ago</small>
+                    </div>
+                </div>
+                <div class="notification"><span class="notif-icon">✓</span>
+                    <div><b>Interview completed</b>
+                        <p>Your report is ready to view.</p><small>Sep 8, 2026</small>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

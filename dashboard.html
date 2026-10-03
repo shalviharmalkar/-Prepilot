@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Dashboard — PrepPilot AI</title>
+    <link rel="icon" href="logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+        <aside class="sidebar"><a class="brand" href="dashboard.html"><span class="brand-mark">P</span><span>PrepPilot
+                    <b>AI</b></span></a>
+            <div class="side-label">WORKSPACE</div>
+            <nav><a class="active" href="dashboard.html">⌂ <span>Dashboard</span></a><a href="resume.html">▣ <span>My
+                        Resume</span></a><a href="jobs.html">◈ <span>Job Roles</span></a><a href="interview.html">◉
+                    <span>Interviews</span></a><a href="coding.html">⌘ <span>Coding Practice</span></a><a
+                    href="reports.html">◒ <span>Performance</span></a><a href="resources.html">▤
+                    <span>Learning</span></a></nav>
+            <div class="side-label">ACCOUNT</div>
+            <nav><a href="notifications.html">♢ <span>Notifications</span><em class="badge">3</em></a><a
+                    href="profile.html">○ <span>Profile</span></a><a href="admin.html">⚙ <span>Admin</span></a></nav>
+            <button class="side-logout" data-logout>↪ Sign out</button>
+        </aside>
+        <main class="main">
+            <header class="main-head">
+                <div>
+                    <p class="muted">Saturday, September 12, 2026</p>
+                    <h1>Good morning, <span data-user-name>Candidate</span> </h1>
+                </div><a href="interview.html" class="btn btn-primary">+ New Interview</a>
+            </header>
+            <section class="stats">
+                <div class="stat"><span>INTERVIEWS</span><strong>12</strong><small>+3 this month</small></div>
+                <div class="stat"><span>AVG. SCORE</span><strong>87<span class="small-unit">%</span></strong><small>+8%
+                        from last week</small></div>
+                <div class="stat"><span>QUESTIONS</span><strong>64</strong><small>8 pending</small></div>
+                <div class="stat"><span>RESUME MATCH</span><strong>91<span
+                            class="small-unit">%</span></strong><small>Excellent fit</small></div>
+            </section>
+            <div class="dashboard-grid">
+                <section class="panel">
+                    <div class="panel-head">
+                        <div>
+                            <h2>Performance overview</h2>
+                            <p>Last 6 interview sessions</p>
+                        </div><a href="reports.html">View reports →</a>
+                    </div>
+                    <div class="chart">
+                        <div class="chart-y"><span>100</span><span>75</span><span>50</span><span>25</span><span>0</span>
+                        </div>
+                        <div class="bars"><i style="height:58%"></i><i style="height:72%"></i><i
+                                style="height:66%"></i><i style="height:84%"></i><i style="height:78%"></i><i
+                                style="height:91%"></i></div>
+                    </div>
+                    <div class="chart-labels"><span>Aug 10</span><span>Aug 17</span><span>Aug 24</span><span>Aug
+                            31</span><span>Sep 7</span><span>Today</span></div>
+                </section>
+                <section class="panel">
+                    <div class="panel-head">
+                        <div>
+                            <h2>Quick start</h2>
+                            <p>Choose your practice mode</p>
+                        </div>
+                    </div>
+                    <div class="quick-grid"><a href="interview.html?type=voice" class="quick"><span>🎙️</span><b>Voice
+                                Interview</b><small>Practice speaking</small></a><a href="interview.html?type=video"
+                            class="quick"><span>🎥</span><b>Video Interview</b><small>Camera + behavior</small></a><a
+                            href="coding.html" class="quick"><span>⌨️</span><b>Coding Challenge</b><small>Test your
+                                logic</small></a><a href="resume.html" class="quick"><span>📄</span><b>Improve
+                                Resume</b><small>Check your skills</small></a></div>
+                </section>
+            </div>
+            <section class="panel">
+                <div class="panel-head">
+                    <div>
+                        <h2>Recent interviews</h2>
+                        <p>Your latest sessions</p>
+                    </div><a href="interview.html">See all →</a>
+                </div>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Job role</th>
+                                <th>Type</th>
+                                <th>Date</th>
+                                <th>Score</th>
+                                <th>Status</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><b>Frontend Developer</b><small>React / JavaScript</small></td>
+                                <td>🎥 Video</td>
+                                <td>Sep 11, 2026</td>
+                                <td><b>91%</b></td>
+                                <td><span class="status success">Completed</span></td>
+                                <td><a href="reports.html">View</a></td>
+                            </tr>
+                            <tr>
+                                <td><b>Software Engineer</b><small>DSA / OOP</small></td>
+                                <td>🎙️ Voice</td>
+                                <td>Sep 08, 2026</td>
+                                <td><b>86%</b></td>
+                                <td><span class="status success">Completed</span></td>
+                                <td><a href="reports.html">View</a></td>
+                            </tr>
+                            <tr>
+                                <td><b>UI/UX Developer</b><small>Design systems</small></td>
+                                <td>🎙️ Voice</td>
+                                <td>Sep 04, 2026</td>
+                                <td><b>82%</b></td>
+                                <td><span class="status warning">Review</span></td>
+                                <td><a href="reports.html">View</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

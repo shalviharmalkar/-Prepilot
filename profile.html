@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Profile — PrepPilot AI</title>
+    <link rel="icon" href="logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+        <aside class="sidebar"></aside>
+        <main class="main">
+            <header class="main-head">
+                <div><a href="dashboard.html" class="back">← Dashboard</a>
+                    <h1>Profile</h1>
+                    <p class="muted">Manage your candidate information.</p>
+                </div>
+            </header>
+            <section class="panel form-panel">
+                <div class="profile-cover">
+                    <div class="avatar big">AK</div>
+                    <div>
+                        <h2 data-user-name>Candidate</h2>
+                        <p>Frontend Developer</p>
+                    </div>
+                </div>
+                <form id="profileForm">
+                    <div class="two"><label>Full name<input id="profileName" value=""></label><label>Email<input
+                                value="candidate@example.com" type="email"></label></div>
+                    <div class="two"><label>Preferred role<select>
+                                <option>Frontend Developer</option>
+                                <option>Software Engineer</option>
+                                <option>UI/UX Developer</option>
+                            </select></label><label>Experience<select>
+                                <option>0–1 years</option>
+                                <option>1–3 years</option>
+                                <option>3+ years</option>
+                            </select></label></div><label>About
+                        you<textarea>Passionate developer preparing for technical and behavioral interviews.</textarea></label><button
+                        class="btn btn-primary" type="submit">Save changes</button>
+                </form>
+            </section>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

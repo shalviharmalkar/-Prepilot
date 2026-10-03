@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Coding Practice — PrepPilot AI</title>
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="app">
+    <aside class="sidebar"></aside>
+    <main class="main">
+      <header class="main-head">
+        <div><a href="dashboard.html" class="back">← Dashboard</a>
+          <h1>Coding Practice</h1>
+          <p class="muted">Solve role-focused problems and track execution results.</p>
+        </div><span class="score-pill">3 challenges completed</span>
+      </header>
+      <div class="coding-layout">
+        <section class="panel problem">
+          <div class="problem-head"><span class="status warning">Medium</span><span>JavaScript · 20 min</span></div>
+          <h2>Two Sum</h2>
+          <p>Given an array of integers and a target, return the indices of the two numbers that add up to the target.
+          </p>
+          <h3>Example</h3>
+          <pre>Input: nums = [2,7,11,15], target = 9
+Output: [0,1]</pre>
+          <div class="chips"><span>Arrays</span><span>Hash Map</span><span>O(n)</span></div>
+        </section>
+        <section class="panel editor">
+          <div class="editor-head"><select>
+              <option>JavaScript</option>
+              <option>Python</option>
+              <option>Java</option>
+            </select><button class="btn btn-light" data-toast="Code formatted">Format</button></div><textarea
+            id="codeEditor">function twoSum(nums, target) {
+  // Write your solution here
+}</textarea>
+          <div class="editor-foot"><span id="execResult">Ready to run</span><button class="btn btn-primary"
+              id="runCode">▶ Run Code</button><button class="btn btn-success"
+              data-toast="Submission saved successfully">Submit</button></div>
+        </section>
+      </div>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>

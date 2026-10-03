@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Resume — PrepPilot AI</title>
+    <link rel="icon" href="logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+        <aside class="sidebar"></aside>
+        <main class="main">
+            <header class="main-head">
+                <div><a href="dashboard.html" class="back">← Dashboard</a>
+                    <h1>My Resume</h1>
+                    <p class="muted">Upload your resume and review extracted skills.</p>
+                </div><label class="btn btn-primary upload-btn">+ Upload Resume<input type="file" id="resumeInput"
+                        accept=".pdf,.doc,.docx" hidden></label>
+            </header>
+            <div class="resume-grid">
+                <section class="panel">
+                    <div class="resume-preview">
+                        <div class="resume-top">
+                            <div class="avatar">AK</div>
+                            <div>
+                                <h2 data-user-name>Candidate</h2>
+                                <p>Frontend Developer</p>
+                            </div><span class="status success">Uploaded</span>
+                        </div>
+                        <div class="resume-section">
+                            <h3>Professional Summary</h3>
+                            <p>Frontend developer focused on building accessible, responsive web applications with
+                                modern JavaScript frameworks.</p>
+                        </div>
+                        <div class="resume-section">
+                            <h3>Experience</h3>
+                            <div class="timeline-item"><b>Software Development Intern</b><small>Technology Company ·
+                                    2026</small>
+                                <p>Built responsive interfaces and integrated REST APIs.</p>
+                            </div>
+                        </div>
+                        <div class="resume-section">
+                            <h3>Skills</h3>
+                            <div class="chips">
+                                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>Git</span><span>REST
+                                    API</span></div>
+                        </div>
+                    </div>
+                </section>
+                <section class="panel">
+                    <div class="panel-head">
+                        <div>
+                            <h2>Extracted skills</h2>
+                            <p>From your latest resume</p>
+                        </div><span class="score-pill">91% match</span>
+                    </div>
+                    <div class="skill-list">
+                        <div><span>JavaScript</span><b>95%</b></div>
+                        <div><span>React</span><b>91%</b></div>
+                        <div><span>CSS</span><b>88%</b></div>
+                        <div><span>REST API</span><b>83%</b></div>
+                        <div><span>Testing</span><b>64%</b></div>
+                    </div>
+                    <div class="ai-box"><b>✦ AI suggestion</b>
+                        <p>Add testing and TypeScript projects to improve your match for senior frontend roles.</p>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

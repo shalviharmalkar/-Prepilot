@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Interview Room — PrepPilot AI</title>
+    <link rel="icon" href="logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="room-body">
+    <header class="room-head"><a class="brand" href="dashboard.html"><span class="brand-mark">P</span><span>PrepPilot
+                <b>AI</b></span></a><span class="session-label" id="sessionLabel">Frontend Developer · Interview
+            Session</span><span class="timer" id="timer">20:00</span></header>
+    <main class="room">
+        <section class="question-card panel">
+            <div class="q-top"><span class="status live">● LIVE</span><span>Question <b id="qNum">1</b> of 10</span>
+            </div>
+            <div class="progress"><i id="qProgress" style="width:10%"></i></div><span class="eyebrow"
+                id="modeLabel">VOICE INTERVIEW</span>
+            <h1 id="question">What is the difference between let, const and var in JavaScript?</h1>
+            <p class="hint">Take a moment to structure your answer. Your browser will capture your microphone, or your
+                camera and microphone for video mode.</p>
+            <div class="media-stage voice-stage" id="mediaStage"><video id="previewVideo" autoplay muted playsinline
+                    hidden></video>
+                <div class="voice-visual" id="voiceVisual">
+                    <div class="mic"><span>🎙️</span>
+                        <div class="pulse"></div>
+                    </div>
+                </div>
+                <div class="device-state" id="deviceState">Checking camera and microphone…</div>
+            </div>
+            <div class="answer-area">
+                <h3 id="recordText">Enable your microphone to begin</h3>
+                <p id="recordHint">Camera and microphone access is required for the selected interview mode.</p>
+                <div class="room-buttons"><button id="enableBtn" class="btn btn-primary">🎙️ Enable
+                        Microphone</button><button id="recordBtn" class="btn btn-light" disabled>● Start
+                        Recording</button></div><audio id="audioPlayback" controls hidden></audio><video
+                    id="videoPlayback" controls playsinline hidden></video>
+            </div>
+            <div class="room-actions"><button class="btn btn-light" id="skipBtn">Skip question</button><button
+                    class="btn btn-primary" id="nextBtn">Next question →</button></div>
+        </section>
+        <aside class="room-side">
+            <div class="panel">
+                <h3>Interview checklist</h3>
+                <ul class="checklist">
+                    <li class="done">✓ Introduce yourself</li>
+                    <li class="current">● JavaScript fundamentals</li>
+                    <li>○ React concepts</li>
+                    <li>○ API integration</li>
+                    <li>○ Problem solving</li>
+                    <li>○ Behavioral</li>
+                </ul>
+            </div>
+            <div class="ai-box"><b>✦ Coach</b>
+                <p>Keep your answer under 90 seconds and use a concrete example.</p>
+            </div>
+            <div class="panel device-panel">
+                <h3>Device status</h3>
+                <div class="device-row"><span>Microphone</span><b id="micStatus">Off</b></div>
+                <div class="device-row"><span>Camera</span><b id="cameraStatus">Off</b></div><small>Use Chrome/Edge on
+                    localhost or HTTPS. Click Allow when your browser asks for permission.</small>
+            </div>
+        </aside>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>

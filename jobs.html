@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Job Roles — PrepPilot AI</title>
+    <link rel="icon" href="logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+        <aside class="sidebar"></aside>
+        <main class="main">
+            <header class="main-head">
+                <div><a href="dashboard.html" class="back">← Dashboard</a>
+                    <h1>Job Roles</h1>
+                    <p class="muted">Choose roles to tailor your interview practice.</p>
+                </div><button class="btn btn-primary" data-toast="Role added to your preparation list">+ Add Job
+                    Role</button>
+            </header>
+            <div class="filters"><input id="jobSearch" placeholder="Search roles..."><select>
+                    <option>All domains</option>
+                    <option>Engineering</option>
+                    <option>Design</option>
+                    <option>Data</option>
+                </select><select>
+                    <option>Recommended</option>
+                    <option>Newest</option>
+                </select></div>
+            <div class="job-grid">
+                <div class="job-card">
+                    <div class="job-icon">JS</div>
+                    <h3>Frontend Developer</h3>
+                    <p>Engineering · Web</p>
+                    <div class="chips"><span>React</span><span>JavaScript</span><span>CSS</span></div>
+                    <div class="job-foot"><span>91% match</span><a href="interview.html">Practice →</a></div>
+                </div>
+                <div class="job-card">
+                    <div class="job-icon">SE</div>
+                    <h3>Software Engineer</h3>
+                    <p>Engineering · Full Stack</p>
+                    <div class="chips"><span>DSA</span><span>OOP</span><span>APIs</span></div>
+                    <div class="job-foot"><span>88% match</span><a href="interview.html">Practice →</a></div>
+                </div>
+                <div class="job-card">
+                    <div class="job-icon">UI</div>
+                    <h3>UI/UX Developer</h3>
+                    <p>Design · Product</p>
+                    <div class="chips"><span>Figma</span><span>UX</span><span>CSS</span></div>
+                    <div class="job-foot"><span>82% match</span><a href="interview.html">Practice →</a></div>
+                </div>
+                <div class="job-card">
+                    <div class="job-icon">DA</div>
+                    <h3>Data Analyst</h3>
+                    <p>Data · Analytics</p>
+                    <div class="chips"><span>SQL</span><span>Python</span><span>Excel</span></div>
+                    <div class="job-foot"><span>76% match</span><a href="interview.html">Practice →</a></div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
